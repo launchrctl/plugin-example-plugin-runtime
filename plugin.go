@@ -34,7 +34,8 @@ func (p *Plugin) DiscoverActions(_ context.Context) ([]*action.Action, error) {
 }
 
 func example() error {
-	// Code to execute goes here
+	// Code to execute by command goes here
+	launchr.Term().Println()
 	launchr.Term().Println("Hello world")
 
 	return nil
