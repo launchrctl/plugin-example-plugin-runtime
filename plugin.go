@@ -26,7 +26,7 @@ func (p *Plugin) PluginInfo() launchr.PluginInfo {
 
 // DiscoverActions implements [launchr.ActionDiscoveryPlugin] interface.
 func (p *Plugin) DiscoverActions(_ context.Context) ([]*action.Action, error) {
-	a := action.NewFromYAML("example", actionYaml)
+	a := action.NewFromYAML("example:plugin-runtime", actionYaml)
 	a.SetRuntime(action.NewFnRuntime(func(_ context.Context, _ *action.Action) error {
 		return example()
 	}))
