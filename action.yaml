@@ -1,0 +1,4 @@
+runtime: plugin
+action:
+  title: Example-plugin
+  description: "Example of a go plugin for launchrctl (using plugin runtime)"
