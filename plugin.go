@@ -51,4 +51,6 @@ func (p *Plugin) DiscoverActions(_ context.Context) ([]*action.Action, error) {
 func example(username, password string, k keyring.Keyring) error {
 	// Code to execute goes here
 	println("Hello world")
+
+	return nil
 }
